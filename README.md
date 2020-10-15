@@ -110,6 +110,6 @@ make train_mixin_bert TRAIN_FILE=${TRAIN_FILE} STAT_FILE=${STAT_FILE} OUTPUT_DIR
       title={Look at the First Sentence: Position Bias in Question Answering}, 
       author={Miyoung Ko, Jinhyuk Lee, Hyunjae Kim, Gangwoo Kim and Jaewoo Kang},
       year={2020},
-			booktitle={EMNLP}
+      booktitle={EMNLP}
 }
 ```
