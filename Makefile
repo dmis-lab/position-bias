@@ -12,7 +12,7 @@ train_bert:
 	--per_gpu_eval_batch_size 12 \
 	--do_train \
 	--bias_eval True \
-	--output_dir $(OUTPUT_DIR)
+	--output_dir ${OUTPUT_DIR}
 
 # ---------------- Train Baseline BERT -------------------- #
 
@@ -29,7 +29,7 @@ train_entropy_bert:
 	--per_gpu_eval_batch_size 12 \
 	--do_train \
 	--bias_eval True \
-	--output_dir $(OUTPUT_DIR)
+	--output_dir ${OUTPUT_DIR}
 
 # 2. Randomized Position
 train_random_bert:
@@ -44,7 +44,7 @@ train_random_bert:
 	--per_gpu_eval_batch_size 12 \
 	--do_train \
 	--bias_eval True \
-	--output_dir $(OUTPUT_DIR)
+	--output_dir ${OUTPUT_DIR}
 
 
 # ---------------- Train Ensemble BERT -------------------- #
@@ -65,7 +65,7 @@ train_prod_bert:
 	--do_train \
 	--bias_eval True \
 	--all_bound True \
-	--output_dir $(OUTPUT_DIR)
+	--output_dir ${OUTPUT_DIR}
 
 # 2. Learned-Mixin
 train_mixin_bert:
@@ -83,5 +83,5 @@ train_mixin_bert:
 	--do_train \
 	--bias_eval True \
 	--all_bound True \
-	--output_dir $(OUTPUT_DIR)
+	--output_dir ${OUTPUT_DIR}
 
