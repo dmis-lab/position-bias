@@ -1,4 +1,3 @@
-#nsml: pytorch/pytorch:1.5-cuda10.1-cudnn7-runtime
 tqdm
 boto3
 allennlp==0.9.0
