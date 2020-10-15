@@ -1,12 +1,8 @@
 # Position Bias in Question Answering
 
----
-
 This repository provides code for the paper '[Look at the First Sentence: Position Bias in Question Answering](https://arxiv.org/abs/2004.14602)' (EMNLP, 2020). You can train the question-answering model on synthetic datasets with various de-biasing methods. We currently provide synthetic datasets and position statistics of [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/).
 
 ## Requirements
-
----
 
 ```jsx
 $ conda create -n position-bias python=3.6
@@ -18,15 +14,11 @@ Note that Pytorch has to be installed depending on the version of CUDA.
 
 ## Dataset
 
----
-
 We provide five synthetic datasets made from SQuAD.
 
 [Untitled](https://www.notion.so/faa01b7454564ffd902f9fd7c0f14e6d)
 
 ## Train
-
----
 
 The following example train BERT on our synthetic dataset.
 
@@ -78,8 +70,6 @@ make train_mixin_bert TRAIN_FILE=${TRAIN_FILE} STAT_FILE=${STAT_FILE} OUTPUT_DIR
 ```
 
 ## Citation
-
----
 
 ```jsx
 @inproceedings{ko2020position,
