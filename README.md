@@ -14,9 +14,43 @@ Note that Pytorch has to be installed depending on the version of CUDA.
 
 ## Dataset
 
-We provide five synthetic datasets made from SQuAD.
+We provide five synthetic datasets.
 
-[Untitled](https://www.notion.so/faa01b7454564ffd902f9fd7c0f14e6d)
+
+<table >
+	<tbody>
+		<tr>  
+			<td> <b> Dataset </td>
+			<td> <b> Answer Position </td>
+			<td> <b> Example </td>
+		</tr>
+		<tr>
+			<td> SQuAD-train-1st.json </td>
+			<td> First sentence </td>
+			<td> 28,263 </td>
+		</tr>
+		<tr>
+			<td> SQuAD-train-2nd.json </td>
+			<td> Second sentence </td>
+			<td> 20,593 </td>
+		</tr>
+		<tr>
+			<td> SQuAD-train-3rd.json </td>
+			<td> Third sentence </td>
+			<td> 15,567 </td>
+		</tr>
+		<tr>
+			<td> SQuAD-train-4th.json </td>
+			<td> Fourth sentence </td>
+			<td> 10,379 </td>
+		</tr>
+		<tr>
+			<td> SQuAD-train-5th.json </td>
+			<td> Fith Sentence & later </td>
+			<td> 12,610 </td>
+		</tr>
+	</tbody>
+</table>
 
 ## Train
 
