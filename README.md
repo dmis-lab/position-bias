@@ -4,7 +4,7 @@ This repository provides code for the paper '[Look at the First Sentence: Positi
 
 ## Requirements
 
-```jsx
+```
 $ conda create -n position-bias python=3.6
 $ conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit=10.1 -c pytorch
 $ pip install -r requirements.txt
@@ -56,7 +56,7 @@ We provide five synthetic datasets.
 
 The following example train BERT on our synthetic dataset.
 
-```jsx
+```
 TRAIN_FILE=dataset/squad/SQuAD-train-1st.json
 OUTPUT_DIR=logs/1st_bert
 make train_bert TRAIN_FILE=${TRAIN_FILE} OUTPUT_DIR=${OUTPUT_DIR}
@@ -64,13 +64,13 @@ make train_bert TRAIN_FILE=${TRAIN_FILE} OUTPUT_DIR=${OUTPUT_DIR}
 ### Train Baselines 
 You can train two de-biasing baselines (entropy regularization, randomized position) with the following examples.
 
-```jsx
+```
 TRAIN_FILE=dataset/squad/SQuAD-train-1st.json
 OUTPUT_DIR=logs/1st_ent_reg
 make train_entropy_bert TRAIN_FILE=${TRAIN_FILE} OUTPUT_DIR=${OUTPUT_DIR}
 ```
 
-```jsx
+```
 TRAIN_FILE=dataset/squad/SQuAD-train-1st.json
 OUTPUT_DIR=logs/1st_random
 make train_random_bert TRAIN_FILE=${TRAIN_FILE} OUTPUT_DIR=${OUTPUT_DIR}
@@ -78,7 +78,7 @@ make train_random_bert TRAIN_FILE=${TRAIN_FILE} OUTPUT_DIR=${OUTPUT_DIR}
 ### Train Bias Ensemble
 The following examples train bias ensemble methods (bias product, learned-mixin) on each synthetic dataset. To select a synthetic dataset, you can choose K between [1st, 2nd, 3rd, 4th, 5th].
 
-```jsx
+```
 K = 1st
 TRAIN_FILE=dataset/squad/SQuAD-train-${K}.json
 STAT_FILE=dataset/squad/${K}_stat.p
@@ -86,7 +86,7 @@ OUTPUT_DIR=logs/${K}_prod
 make train_prod_bert TRAIN_FILE=${TRAIN_FILE} STAT_FILE=${STAT_FILE} OUTPUT_DIR=${OUTPUT_DIR}
 ```
 
-```jsx
+```
 K = 1st
 TRAIN_FILE=dataset/squad/SQuAD-train-${K}.json
 STAT_FILE=dataset/squad/${K}_stat.p
@@ -96,7 +96,7 @@ make train_mixin_bert TRAIN_FILE=${TRAIN_FILE} STAT_FILE=${STAT_FILE} OUTPUT_DIR
 
 We also provide answer statistics of the full SQuAD dataset. After download full SQuAD data, you can train the bias ensemble method with the following example.
 
-```jsx
+```
 TRAIN_FILE=dataset/squad/SQuAD-v1.1-train.json
 STAT_FILE=dataset/squad/train_answer_stat.p
 OUTPUT_DIR=logs/full_mixin
@@ -105,7 +105,7 @@ make train_mixin_bert TRAIN_FILE=${TRAIN_FILE} STAT_FILE=${STAT_FILE} OUTPUT_DIR
 
 ## Citation
 
-```jsx
+```
 @inproceedings{ko2020position,
       title={Look at the First Sentence: Position Bias in Question Answering}, 
       author={Miyoung Ko, Jinhyuk Lee, Hyunjae Kim, Gangwoo Kim and Jaewoo Kang},
