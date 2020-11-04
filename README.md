@@ -108,7 +108,7 @@ make train_mixin_bert TRAIN_FILE=${TRAIN_FILE} STAT_FILE=${STAT_FILE} OUTPUT_DIR
 ```
 @inproceedings{ko2020position,
       title={Look at the First Sentence: Position Bias in Question Answering}, 
-      author={Miyoung Ko, Jinhyuk Lee, Hyunjae Kim, Gangwoo Kim and Jaewoo Kang},
+      author={Ko, Miyoung and Lee, Jinhyuk and Kim, Hyunjae and Kim, Gangwoo and Kang, Jaewoo},
       year={2020},
       booktitle={EMNLP}
 }
